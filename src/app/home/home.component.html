@@ -1,0 +1,17 @@
+<div class="characters">
+     <div class="character-thumbnail">
+      <div class="character" *ngFor="let character of characters">
+        <div class="cover">
+          <img [src]="character.image" (click)="goToCharacter(character.id)" alt="" />
+        </div>
+        <div class="detail">
+          <div class="name">{{ character.name }}</div>
+          <div class="info">{{ character.status }} - {{ character.species }}</div>&nbsp;
+          <div class="last-loc">Last known location</div>&nbsp;
+          <div class="loc">{{ character.location.name }}</div>&nbsp;
+          <div class="First-seen">First Seen in</div>
+          <div class="First">{{ character.origin.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,15 @@
+<div class="chars">
+    <div class="char-thumbnail">
+       <div class="cover">
+         <img [src]="char?.image"alt="" />
+       </div>
+       <div class="detail">
+         <div class="name">{{ char?.name }}</div>
+         <div class="info">{{ char?.status }} - {{ char?.species }}</div>&nbsp;
+         <div class="last-loc">Last known location</div>&nbsp;
+         <div class="loc">{{ char?.location?.name }}</div>&nbsp;
+         <div class="First-seen">First Seen in</div>
+         <div class="First">{{ char?.origin?.name }}</div>
+       </div>
+    </div>
+</div>
